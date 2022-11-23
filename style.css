@@ -1,5 +1,5 @@
 /* Selectors will be in alphabetical order under each heading */
-/* Body Section*/
+/* BODY SECTION */
 * {
   box-sizing: border-box;
 }
@@ -15,6 +15,8 @@ h1,
 p {
   font-size: 4rem;
 }
+
+/* MAIN SECTION */
 
 h2 {
   font-size: 2rem;
@@ -33,6 +35,12 @@ p {
   max-height: 100px;
 }
 
+.players-token-icon {
+  margin-top: 0;
+}
+
+/*** GAME'S GRID */
+
 .game-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -45,11 +53,43 @@ p {
   width: 100px;
 }
 
-.token,
-.token-icon {
-  margin-top: 0;
+/*** CROSSED-OUT LINES */
+h3 {
+	margin: 0 auto;
+}
+.vertical-line {
+  border: 2px solid red;
+	bottom: 88px;
+  height: 290px;
+  position: relative;
+  width: 2px;
 }
 
-.hide {
-  display: none;
+.hr-line {
+  border: 2px solid red;
+	bottom: 48px;
+  height: 2px;
+	left: 4px;
+  position: relative;
+  width: 290px;
+}
+
+.left-diagonal-line {
+  border: 2px solid red;
+  height: 2px;
+  position: relative;
+	right: 53px;
+  rotate: 45deg;
+	top: 53px;
+  width: 400px;
+}
+
+.right-diagonal-line {
+  border: 2px solid red;
+  height: 2px;
+  position: relative;
+  right: 53px;
+  rotate: 135deg;
+  top: 53px;
+  width: 400px;
 }
