@@ -1,39 +1,42 @@
 /* Selectors will be in alphabetical order under each heading */
 /* Body Section*/
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Secular One', sans-serif;
-	margin: 0 auto;
-	max-width: 975px;
-	text-align: center;
+  font-family: 'Secular One', sans-serif;
+  margin: 0 auto;
+  max-width: 975px;
+  text-align: center;
 }
 
-h1, p {
-	font-size: 4rem;
+h1,
+p {
+  font-size: 4rem;
 }
 
 h2 {
-	font-size: 2rem;
-	word-spacing: 8px;
+  font-size: 2rem;
+  word-spacing: 8px;
 }
 
 main {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
 }
 
 p {
-	font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0 auto;
+  max-height: 100px;
 }
 
 .game-grid {
   display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
 }
 
 .game-grid div {
@@ -42,6 +45,11 @@ p {
   width: 100px;
 }
 
-.token, .token-icon {
-	margin-top: 0;
+.token,
+.token-icon {
+  margin-top: 0;
+}
+
+.hide {
+  display: none;
 }
