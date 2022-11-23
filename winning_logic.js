@@ -56,9 +56,17 @@ function checkWinner(token) {
 }
 
 function revealWinner(token) {
+  var displayWinner = document.createElement('h2');
+
+  displayWinner.classList.add('winner-txt');
+  
   if (token === 'X') {
-    console.log('Player 1 wins!');
+    displayWinner.textContent = 'Player 1 wins!'
+    document.body.appendChild(displayWinner);
+    gridBoxes.removeEventListener('click', clickEvent);
   } else if (token === 'O') {
-    console.log('Player 2 wins!');
+    displayWinner.textContent = 'Player 2 wins!'
+    document.body.appendChild(displayWinner);
+    gridBoxes.removeEventListener('click', clickEvent);
   }
 }
