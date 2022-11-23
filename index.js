@@ -2,7 +2,6 @@ var gridBoxes = document.querySelector('.game-grid');
 var clickCount = 0;
 
 var clickEvent = (event) => {
-  // function clickEvent(event) {
   var eachBox = event.target;
   var newPara = document.createElement('p');
 
@@ -17,7 +16,7 @@ var clickEvent = (event) => {
     newPara.textContent = 'O';
     eachBox.appendChild(newPara);
     clickCount++;
-    checkWinner('O')
+    checkWinner('O');
   }
 };
 
