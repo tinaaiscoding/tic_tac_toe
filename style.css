@@ -20,6 +20,12 @@ p {
 }
 
 /* HEADER SECTION */
+h2 {
+  font-size: 2.5rem;
+  word-spacing: 8px;
+  width: 100%;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -36,13 +42,6 @@ header {
 }
 
 /* MAIN SECTION */
-
-h2 {
-  font-size: 2.5rem;
-  word-spacing: 8px;
-  width: 100%;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -58,10 +57,6 @@ p {
 
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
-}
-
-.players-token-icon {
-  margin-top: 0;
 }
 
 /*** GAME'S GRID */
@@ -96,17 +91,9 @@ p {
 /*** CROSSED-OUT LINES */
 h3 {
   background-color: rgb(255, 222, 36);
-  margin: 0 auto;
-  height: 10px;
   border: 3px solid black;
-}
-.vertical-line {
-  top: 147px;
-  left: -96px;
-  position: absolute;
-  rotate: 90deg;
-  width: 290px;
-  z-index: 1;
+  height: 10px;
+  margin: 0 auto;
 }
 
 .hr-line {
@@ -135,7 +122,38 @@ h3 {
   z-index: 1;
 }
 
-/* WINNER TEXT */
+.vertical-line {
+  left: -96px;
+  position: absolute;
+  rotate: 90deg;
+  top: 147px;
+  width: 290px;
+  z-index: 1;
+}
+
+/*** WINNER TEXT */
+.my-turn {
+  color: black;
+  font-size: 1rem;
+  position: absolute;
+  -webkit-text-stroke-width: 0px;
+  z-index: 1;
+}
+
+.my-turn-left {
+  right: 41px;
+  top: 10px;
+}
+
+.my-turn-right {
+  left: 170px;
+  top: 10px;
+}
+
+.visible {
+  visibility: visible;
+}
+
 .winner-txt {
   font-family: 'New Super Mario Font U', sans-serif;
   font-size: 3.5rem;
@@ -146,11 +164,14 @@ h3 {
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
-.visible {
-  visibility: visible;
+/*** CHARACTER SECTIONS */
+.characters {
+  position: absolute;
+  height: 200px;
+  margin: auto;
+  top: 105px;
 }
 
-/* CHARACTER SECTION */
 .character-image-left {
   position: relative;
   right: 110px;
@@ -160,13 +181,6 @@ h3 {
 .character-image-right {
   position: relative;
   top: 320px;
-}
-
-.characters {
-  position: absolute;
-  height: 200px;
-  margin: auto;
-  top: 105px;
 }
 
 .invisible {
@@ -181,34 +195,17 @@ h3 {
 .mario-2,
 .luigi-2 {
   height: 230px;
-  top: 100px;
-}
-
-.my-turn {
-  color: black;
-  font-size: 1rem;
-  position: absolute;
-  z-index: 1;
-}
-
-.my-turn-left {
-  right: 41px;
-  top: 10px;
-}
-
-.my-turn-right {
-  left: 170px;
-  top: 10px;
+  top: 87px;
 }
 
 .speech-bubble-left {
-  position: absolute;
   left: 400px;
   height: 100px;
+  position: absolute;
 }
 
 .speech-bubble-right {
-  position: absolute;
-  right: 270px;
   height: 100px;
+  right: 270px;
+  position: absolute;
 }
