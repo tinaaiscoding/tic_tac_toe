@@ -23,8 +23,9 @@ Enjoy my take on the classic tic-tac-toe game.
 - [Problems I ran into](./planning/problems_I_ran_into.pdf)
 
 ## :warning: Bugs to fix :bug:
-- Hover effect after the game has ended
-[View bug](./images/Bug1.png)
+- Hover effect after the game has ended. 
+([View bug](./images/Bug1.png))
+- Refactor code!!!
 
 ## 😮‍💨 Lessons learnt 
 - Planning is **SUPER** helpful
@@ -36,3 +37,7 @@ Enjoy my take on the classic tic-tac-toe game.
  - Reset button
  - Score tracker
  - Different devices view
+
+ ## 🙆🏻‍♀️ Comments from Tina
+ Super happy with the way everything turned out. I had **so** much fun building this project. I would literally laugh and celebrate when something worked the way I wanted it to. I think it was the Super Mario theme that made it more fun and enjoyable 🤣 \
+ By the end of this project, I found that I was able to debug A LOT faster then previously. 90% of the time, I knew exactly where I should look and what I needed to change. 
