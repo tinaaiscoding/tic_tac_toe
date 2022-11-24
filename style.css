@@ -5,35 +5,56 @@
 }
 
 body {
-  font-family: 'Secular One', sans-serif;
-  height: 100vh;
-  margin: 0 auto 50px;
-  max-width: 975px;
+  background: url(./images/bg-img.jpg) repeat-x center;
+  background-size: auto;
+  color: white;
+  font-family: 'SF Pixelate', sans-serif;
+  max-height: 100vh;
+  margin: 20px auto 50px;
+  max-width: 100%;
   text-align: center;
 }
 
-h1,
 p {
   font-size: 4rem;
+}
+
+/* HEADER SECTION */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cloud {
+  height: 70px;
+  opacity: 80%;
+}
+
+.game-title {
+  height: 120px;
+  width: 100%;
 }
 
 /* MAIN SECTION */
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   word-spacing: 8px;
+  width: 100%;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
+  margin: 65px auto 0;
+  max-width: 100%;
 }
 
 p {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Phatone', sans-serif;
+  font-size: 2.7rem;
   margin: 0 auto;
-  min-height: 100%;
+  padding: 9px 10px 0 13px;
 }
 
 .players-token-icon {
@@ -41,21 +62,24 @@ p {
 }
 
 /*** GAME'S GRID */
-
 .game-grid {
   background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   margin: auto;
 }
 
 .game-grid div {
-  background-color: white;
+  background-image: url(./images/question_block_2.png);
+  background-size: contain;
   height: 100px;
   margin: 3px 2px 4px 2px;
   width: 100px;
   position: relative;
+}
+
+.game-grid div:hover {
+  opacity: 75%;
 }
 
 .grid-col-1 {
@@ -68,9 +92,10 @@ p {
 
 /*** CROSSED-OUT LINES */
 h3 {
+  background-color: rgb(255, 222, 36);
   margin: 0 auto;
-  border-top: 3px solid red;
-  border-radius: 30%;
+  height: 10px;
+  border: 3px solid black;
 }
 .vertical-line {
   top: 147px;
@@ -109,5 +134,78 @@ h3 {
 
 /* WINNER TEXT */
 .winner-txt {
+  font-family: 'New Super Mario Font U', sans-serif;
   font-size: 3.5rem;
+  margin: 0 auto;
+  visibility: hidden;
+
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.visible {
+  visibility: visible;
+}
+
+/* CHARACTER SECTION */
+.character-image-left {
+  position: relative;
+  right: 110px;
+  top: 320px;
+}
+
+.character-image-right {
+  position: relative;
+  top: 320px;
+}
+
+.characters {
+  position: absolute;
+  height: 200px;
+  margin: auto;
+  top: 120px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.luigi {
+  height: 210px;
+  top: 110px;
+}
+
+.mario-2,
+.luigi-2 {
+  height: 230px;
+  top: 100px;
+}
+
+.my-turn {
+  color: black;
+  font-size: 1rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.my-turn-left {
+  right: 41px;
+  top: 10px;
+}
+
+.my-turn-right {
+  left: 170px;
+  top: 10px;
+}
+
+.speech-bubble-left {
+  position: absolute;
+  left: 400px;
+  height: 100px;
+}
+
+.speech-bubble-right {
+  position: absolute;
+  right: 270px;
+  height: 100px;
 }

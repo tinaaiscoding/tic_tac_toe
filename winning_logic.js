@@ -1,18 +1,17 @@
-const displayWinner = document.createElement('h2');
-displayWinner.classList.add('winner-txt');
+const winnerTxt = document.querySelector('.winner-txt');
 
 const revealWinner = (token) => {
   if (token === 'X') {
-    displayWinner.textContent = 'Player 1 wins!';
-    document.body.appendChild(displayWinner);
-
+    winnerTxt.textContent = 'Player 1 wins!';
+    winnerTxt.classList.add('visible');
+    resetTurns()
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
     });
   } else if (token === 'O') {
-    displayWinner.textContent = 'Player 2 wins!';
-    document.body.appendChild(displayWinner);
-
+    winnerTxt.textContent = 'Player 2 wins!';
+    winnerTxt.classList.add('visible');
+    resetTurns()
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
     });
@@ -93,7 +92,7 @@ const checkWinner = (token) => {
     gridAllBoxes[7].childNodes.length === 1 &&
     gridAllBoxes[8].childNodes.length === 1
   ) {
-    displayWinner.textContent = 'Draw!';
-    document.body.appendChild(displayWinner);
+    winnerTxt.textContent = 'Draw!';
+    document.body.appendChild(winnerTxt);
   }
 };
