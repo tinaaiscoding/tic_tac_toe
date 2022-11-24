@@ -55,6 +55,9 @@ p {
   font-size: 2.7rem;
   margin: 0 auto;
   padding: 9px 10px 0 13px;
+
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .players-token-icon {
@@ -163,7 +166,7 @@ h3 {
   position: absolute;
   height: 200px;
   margin: auto;
-  top: 120px;
+  top: 105px;
 }
 
 .invisible {
@@ -172,7 +175,7 @@ h3 {
 
 .luigi {
   height: 210px;
-  top: 110px;
+  top: 95px;
 }
 
 .mario-2,

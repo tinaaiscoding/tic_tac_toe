@@ -18,6 +18,21 @@ Enjoy my take on the classic tic-tac-toe game.
 - [Flow diagram](./planning/plan_diagram.pdf)
 - [Wireframing](./planning/html_wire_framing.pdf)
 
-**More planning during the process of building:** \
-\
-*to be continued...*
+**More planning during the process of building:**
+- [Design ideas](./planning/design_ideas.pdf)
+- [Problems I ran into](./planning/problems_I_ran_into.pdf)
+
+## :warning: Bugs to fix :bug:
+- Hover effect after the game has ended
+[View bug](./images/Bug1.png)
+
+## 😮‍💨 Lessons learnt 
+- Planning is **SUPER** helpful
+- Don't give up, asking for help is ok
+- Slow and steady wins the race
+
+ ## :white_check_mark: Future features
+ - Pop-up modal of winner
+ - Reset button
+ - Score tracker
+ - Different devices view
