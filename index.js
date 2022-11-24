@@ -1,9 +1,11 @@
-var gridBoxes = document.querySelector('.game-grid');
-var clickCount = 0;
+// const gridBoxes = document.querySelector('.game-grid');
+const gridAllBoxes = document.querySelectorAll('div');
 
-var clickEvent = (event) => {
-  var eachBox = event.target;
-  var newPara = document.createElement('p');
+let clickCount = 0;
+
+const clickEvent = (event) => {
+  const eachBox = event.target;
+  const newPara = document.createElement('p');
 
   if (clickCount % 2 === 0 && eachBox.tagName.toLowerCase() === 'div') {
     newPara.classList.add('x-token');
@@ -20,4 +22,6 @@ var clickEvent = (event) => {
   }
 };
 
-gridBoxes.addEventListener('click', clickEvent);
+gridAllBoxes.forEach((div) => {
+  div.addEventListener('click', clickEvent);
+});

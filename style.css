@@ -33,7 +33,7 @@ main {
 p {
   font-family: 'Permanent Marker', cursive;
   margin: 0 auto;
-  max-height: 100px;
+  min-height: 100%;
 }
 
 .players-token-icon {
@@ -43,16 +43,27 @@ p {
 /*** GAME'S GRID */
 
 .game-grid {
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
   margin: auto;
 }
 
 .game-grid div {
-  border: 1px solid black;
+  background-color: white;
   height: 100px;
+  margin: 3px 2px 4px 2px;
   width: 100px;
   position: relative;
+}
+
+.grid-col-1 {
+  margin-left: 2px;
+}
+
+.grid-col-3 {
+  margin-right: 2px;
 }
 
 /*** CROSSED-OUT LINES */
