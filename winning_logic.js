@@ -3,14 +3,14 @@ const winnerTxt = document.querySelector('.winner-txt');
 const revealWinner = (token) => {
   if (token === 'X') {
     winnerTxt.textContent = 'Player 1 wins!';
-    winnerTxt.classList.add('visible');
+    winnerTxt.classList.remove('invisible');
     resetTurns()
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
     });
   } else if (token === 'O') {
     winnerTxt.textContent = 'Player 2 wins!';
-    winnerTxt.classList.add('visible');
+    winnerTxt.classList.remove('invisible');
     resetTurns()
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
