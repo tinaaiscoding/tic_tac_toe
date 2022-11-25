@@ -1,4 +1,4 @@
-const gridAllBoxes = document.querySelectorAll('div');
+const gridAllBoxes = document.querySelectorAll('.game-grid div');
 
 let clickCount = 0;
 

@@ -20,10 +20,13 @@
 
     <script src="index.js" defer></script>
     <script src="winning_logic.js" defer></script>
+    <script src="hamburger_menu.js" defer></script>
 
     <title>Tina's Tic Tac Toe Game</title>
   </head>
+
   <body>
+    <!--------HEADER SECTION-------->
     <header>
       <section>
         <h2>Player 1 is</h2>
@@ -35,7 +38,62 @@
         <h2>Player 2 is</h2>
         <img class="cloud" src="./images/o-cloud.png" alt="" />
       </section>
+
+      <!--HAMBURGER MENU SECTION-->
+      <nav class="ham-menu">
+        <h4>MENU</h4>
+        <ul class="display-none">
+          <li>NEW GAME</li>
+          <li>HOW TO PLAY</li>
+          <li>SCOREBOARD</li>
+          <li>CHANGE PLAYERS</li>
+          <li>CREDITS</li>
+        </ul>
+      </nav>
     </header>
+
+    <!--------MODAL SECTION-------->
+    <div id="backdrop" style="display: none"></div>
+    <!--START MODAL-->
+    <section class="modal" id="start-char-modal" style="display: none">
+      <div class="modal-content"></div>
+      <div class="modal-actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Submit</button>
+      </div>
+    </section>
+
+    <!--CHANGE CHARACTER MODAL-->
+    <section class="modal" id="change-char-modal" style="display: none">
+      <div class="modal-content"></div>
+      <div class="modal-actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Submit</button>
+      </div>
+    </section>
+
+    <!--SCOREBOARD MODAL-->
+    <section class="modal" id="scoreboard-modal" style="display: none">
+      <div class="modal-content"></div>
+      <div class="modal-actions">
+        <button class="btn btn--passive">Back</button>
+      </div>
+    </section>
+
+    <!--DISPLAY WINNER MODAL-->
+    <section class="modal" id="winner-modal" style="display: none">
+      <div class="modal-content">
+        <section class="winner">
+          <h2 class="winner-txt invisible">Player 1 wins!</h2>
+        </section>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn--success">Play again</button>
+      </div>
+    </section>
+
+    <!--------MAIN SECTION-------->
+    <!--LEFT CHARACTER-->
     <main>
       <section class="character-image-left">
         <section class="mario-second-move invisible">
@@ -47,13 +105,19 @@
           />
           <img
             class="characters mario-2"
-            src="./images/mario_2 copy.png"
+            src="./images/characters/mario_2.png"
             alt=""
           />
         </section>
 
-        <img class="characters mario" src="./images/mario_1.png" alt="" />
+        <img
+          class="characters mario"
+          src="./images/characters/mario_1.png"
+          alt=""
+        />
       </section>
+
+      <!--GRID BOARD-->
       <section class="game-grid">
         <section class="grid-col-1">
           <div class="box1"></div>
@@ -74,6 +138,7 @@
         </section>
       </section>
 
+      <!--RIGHT CHARACTER-->
       <section class="character-image-right">
         <section class="luigi-second-move invisible">
           <p class="my-turn my-turn-right">It's my turn</p>
@@ -82,15 +147,19 @@
             src="./images/speech_bubble_right.png"
             alt=""
           />
-          <img class="characters luigi-2" src="./images/luigi_2.png" alt="" />
+          <img
+            class="characters luigi-2"
+            src="./images/characters/luigi_2.png"
+            alt=""
+          />
         </section>
 
-        <img class="characters luigi" src="./images/luigi_1.png" alt="" />
+        <img
+          class="characters luigi"
+          src="./images/characters/luigi_1.png"
+          alt=""
+        />
       </section>
     </main>
-
-    <section class="winner">
-      <h2 class="winner-txt invisible">Player 1 wins!</h2>
-    </section>
   </body>
 </html>

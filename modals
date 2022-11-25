@@ -1,0 +1,7 @@
+function backDropOn() {
+  backdrop.classList.add('visible');
+}
+
+function backDropOff() {
+  backdrop.classList.remove('visible');
+}
