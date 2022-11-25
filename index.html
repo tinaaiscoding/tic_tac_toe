@@ -21,6 +21,7 @@
     <script src="index.js" defer></script>
     <script src="winning_logic.js" defer></script>
     <script src="hamburger_menu.js" defer></script>
+    <script src="modals.js" defer></script>
 
     <title>Tina's Tic Tac Toe Game</title>
   </head>
@@ -39,7 +40,7 @@
         <img class="cloud" src="./images/o-cloud.png" alt="" />
       </section>
 
-      <!--HAMBURGER MENU SECTION-->
+      <!-HAMBURGER MENU SECTION->
       <nav class="ham-menu">
         <h4>MENU</h4>
         <ul class="display-none">
@@ -47,40 +48,54 @@
           <li>HOW TO PLAY</li>
           <li>SCOREBOARD</li>
           <li>CHANGE PLAYER</li>
-          <li>CREDITS</li>
+          <li><a class="credits" href="#">CREDITS</a></li>
         </ul>
       </nav>
     </header>
 
     <!--------MODAL SECTION-------->
-    <div id="backdrop" style="display: none"></div>
-    <!--START MODAL-->
+    <div id="backdrop"></div>
+    <!-START MODAL->
     <section class="modal" id="start-char-modal" style="display: none">
       <div class="modal-content"></div>
       <div class="modal-actions">
-        <button class="btn btn--passive">Cancel</button>
-        <button class="btn btn--success">Submit</button>
+        <button class="btn btn-success">Start</button>
       </div>
     </section>
 
-    <!--CHANGE CHARACTER MODAL-->
-    <section class="modal" id="change-char-modal" style="display: none">
-      <div class="modal-content"></div>
+    <!-HOW TO PLAY MODAL->
+    <section class="modal" id="how-to-play-modal">
+      <div class="modal-content">
+        <h2><b>How to play</b></h2> 
+        <p> The game requires two players. </p>
+        <p> Each player will be assigned a token. 
+        <p> There is a 3x3 grid in which each player takes turn putting
+        their token in a square. </p>
+        <p> The first player to get three tokens in a row (vertically, horizontally or diagonally) wins!</p>
+      </div>
       <div class="modal-actions">
-        <button class="btn btn--passive">Cancel</button>
-        <button class="btn btn--success">Submit</button>
+        <button class="btn btn-passive">Back</button>
       </div>
     </section>
 
-    <!--SCOREBOARD MODAL-->
+    <!-SCOREBOARD MODAL->
     <section class="modal" id="scoreboard-modal" style="display: none">
       <div class="modal-content"></div>
       <div class="modal-actions">
-        <button class="btn btn--passive">Back</button>
+        <button class="btn btn-passive">Back</button>
       </div>
     </section>
 
-    <!--DISPLAY WINNER MODAL-->
+    <!-CHANGE CHARACTER MODAL->
+    <section class="modal" id="change-char-modal" style="display: none">
+      <div class="modal-content"></div>
+      <div class="modal-actions">
+        <button class="btn btn-passive">Back</button>
+        <button class="btn btn-success">Change</button>
+      </div>
+    </section>
+
+    <!-DISPLAY WINNER MODAL->
     <section class="modal" id="winner-modal" style="display: none">
       <div class="modal-content">
         <section class="winner">
@@ -88,12 +103,12 @@
         </section>
       </div>
       <div class="modal-actions">
-        <button class="btn btn--success">Play again</button>
+        <button class="btn btn-success">Play again</button>
       </div>
     </section>
 
     <!--------MAIN SECTION-------->
-    <!--LEFT CHARACTER-->
+    <!-LEFT CHARACTER->
     <main>
       <section class="character-image-left">
         <section class="mario-second-move invisible">
@@ -117,7 +132,7 @@
         />
       </section>
 
-      <!--GRID BOARD-->
+      <!-GRID BOARD->
       <section class="game-grid">
         <section class="grid-col-1">
           <div class="box1"></div>
@@ -138,7 +153,7 @@
         </section>
       </section>
 
-      <!--RIGHT CHARACTER-->
+      <!-RIGHT CHARACTER->
       <section class="character-image-right">
         <section class="luigi-second-move invisible">
           <p class="my-turn my-turn-right">It's my turn</p>

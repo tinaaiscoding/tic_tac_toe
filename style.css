@@ -55,6 +55,7 @@ header {
 
 /*** HAMBURGER MENU */
 nav {
+  cursor: pointer;
   margin: auto;
   position: absolute;
   right: 5px;
@@ -70,6 +71,11 @@ nav h4 {
 nav ul {
   margin: 5px 0 0;
   padding: 0;
+}
+
+.credits {
+  color: black;
+  text-decoration: none;
 }
 
 .ham-menu li {
@@ -104,7 +110,6 @@ nav ul {
   }
 }
 
-
 /* MAIN SECTION */
 main {
   display: grid;
@@ -114,13 +119,9 @@ main {
 }
 
 p {
-  font-family: 'Phatone', sans-serif;
   font-size: 2.7rem;
   margin: 0 auto;
   padding: 9px 10px 0 13px;
-
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 /*** GAME'S GRID */
@@ -138,6 +139,16 @@ p {
   margin: 3px 2px 4px 2px;
   position: relative;
   width: 100px;
+}
+
+.game-grid div p {
+  font-family: 'Phatone', sans-serif;
+  font-size: 2.7rem;
+  margin: 0 auto;
+  padding: 9px 10px 0 13px;
+
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .game-grid div:hover {
@@ -191,8 +202,11 @@ h3 {
 
 /*** WINNER TEXT */
 .my-turn {
+  font-family: 'Phatone', sans-serif;
   color: black;
   font-size: 1rem;
+  margin: 0 auto;
+  padding: 9px 10px 0 13px;
   position: absolute;
   z-index: 1;
 
@@ -273,7 +287,7 @@ h3 {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.30);
   z-index: 10;
   pointer-events: none;
   display: none;
@@ -285,25 +299,60 @@ h3 {
 }
 
 /* MODAL */
+.btn {
+  display: inline-block;
+  font-family: 'SF Pixelate', sans-serif;
+  padding: 0.7em 1.4em;
+  margin: 20px auto;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background-image: linear-gradient(#fbf07c 20%, #fed10a 70%, #da944e 100%);
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-align: center;
+  position: relative;
+}
+
+.btn:active {
+  top: 0.15em;
+}
+
 .modal {
-  position: fixed;
-  z-index: 100;
-  background: white;
+  background: rgb(189, 240, 255);
   border-radius: 10px;
-  width: 80%;
-  top: 30vh;
-  left: 10%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 10px 15px 8px rgba(0, 0, 0, 0.26);
+  color: black;
   display: none;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 100;
+}
+
+.modal h2 {
+  font-size: 2rem;
+  padding: 20px 0 10px;
+}
+
+.modal p {
+  font-size: 1rem;
+  margin: 15px 10px;
 }
 
 .modal.visible {
   display: block;
   animation: fade-slide-in 0.3s ease-out forwards;
 }
+
+/*** HOW-TO-PLAY MODAL */
+#how-to-play-modal {
+  width: 400px;
+}
 /*** CHARACTER MODAL */
 
 /*** SCOREBOARD MODAL */
 
-/*** DISPLAY WINNER MODAL */
-
+/*** DISPLAY-WINNER MODAL */
