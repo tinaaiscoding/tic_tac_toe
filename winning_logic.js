@@ -7,6 +7,7 @@ const revealWinner = (token) => {
     resetTurns()
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
+      div.classList.add('disabled');
     });
   } else if (token === 'O') {
     winnerTxt.textContent = 'Player 2 wins!';
@@ -14,6 +15,7 @@ const revealWinner = (token) => {
     resetTurns()
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
+      div.classList.add('disabled');
     });
   }
 };
