@@ -3,7 +3,7 @@ const menuList = document.querySelector('.ham-menu ul');
 const menuItems = document.querySelectorAll('.ham-menu li');
 const allModals = document.querySelectorAll('.modal');
 const backdrop = document.getElementById('backdrop');
-const passiveBtn = document.querySelectorAll('.btn-passive')
+const passiveBtn = document.querySelectorAll('.btn-passive');
 
 function backDropOn() {
   backdrop.classList.add('visible');
@@ -14,19 +14,17 @@ function backDropOff() {
 }
 
 function removeBackdropHandler() {
-  allModals.forEach(modal => {
-    modal.classList.remove('visible')
+  allModals.forEach((modal) => {
+    modal.classList.remove('visible');
   });
   backDropOff();
 }
 
-
-  for (let i = 0; i < passiveBtn.length; i++) {
-    passiveBtn[i].addEventListener('click', () => {
-      removeBackdropHandler();
-    });
-  }
- 
+for (let i = 0; i < passiveBtn.length; i++) {
+  passiveBtn[i].addEventListener('click', () => {
+    removeBackdropHandler();
+  });
+}
 
 backdrop.addEventListener('click', removeBackdropHandler);
 

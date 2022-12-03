@@ -68,6 +68,10 @@ nav h4 {
   width: 100%;
 }
 
+nav h4:hover {
+  color: rgb(75, 75, 255);
+}
+
 nav ul {
   margin: 5px 0 0;
   padding: 0;
@@ -133,7 +137,7 @@ p {
 }
 
 .game-grid div {
-  background-image: url(./images/question_block_2.png);
+  background-image: url(./images/empty_block_2.png);
   background-size: contain;
   height: 100px;
   margin: 3px 2px 4px 2px;
@@ -151,16 +155,21 @@ p {
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
-.game-grid div:hover {
-  opacity: 75%;
-}
-
 .grid-col-1 {
   margin-left: 2px;
 }
 
 .grid-col-3 {
   margin-right: 2px;
+}
+
+.question-block {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.question-block:hover {
+  opacity: 75%;
 }
 
 /*** CROSSED-OUT LINES */
@@ -226,15 +235,6 @@ h3 {
   left: 170px;
 }
 
-.winner-txt {
-  font-family: 'New Super Mario Font U', sans-serif;
-  font-size: 3.5rem;
-  margin: 0 auto;
-
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
-}
-
 /*** CHARACTER SECTIONS */
 .characters {
   position: absolute;
@@ -287,7 +287,7 @@ h3 {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.30);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 10;
   pointer-events: none;
   display: none;
@@ -344,15 +344,32 @@ h3 {
 
 .modal.visible {
   display: block;
-  animation: fade-slide-in 0.3s ease-out forwards;
 }
 
 /*** HOW-TO-PLAY MODAL */
 #how-to-play-modal {
   width: 400px;
 }
+
 /*** CHARACTER MODAL */
 
 /*** SCOREBOARD MODAL */
 
 /*** DISPLAY-WINNER MODAL */
+#winner-modal {
+  background-color: rgba(189, 240, 255, 93%);
+top: 300px;
+  transition-property: all;
+  transition-delay: 2000s;
+  max-width: 30%;
+}
+
+.modal .winner-txt {
+  color: white;
+  font-family: 'New Super Mario Font U', sans-serif;
+  font-size: 4.5rem;
+  margin: 0 auto;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

@@ -1,22 +1,38 @@
 const winnerTxt = document.querySelector('.winner-txt');
+const winnerModal = document.querySelector('#winner-modal');
+
+let totalScoresP1 = 0
+let totalScoresP2 = 0
 
 const revealWinner = (token) => {
   if (token === 'X') {
     winnerTxt.textContent = 'Player 1 wins!';
-    winnerTxt.classList.remove('invisible');
-    resetTurns()
+    winnerModal.classList.add('visible');
+    
+
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
       div.classList.add('disabled');
     });
+
+    backDropOn();
+    resetCharacters()
+    totalScoresP1++
+    console.log(totalScoresP1);
+
   } else if (token === 'O') {
     winnerTxt.textContent = 'Player 2 wins!';
-    winnerTxt.classList.remove('invisible');
-    resetTurns()
+    winnerModal.classList.add('visible');
+
     gridAllBoxes.forEach((div) => {
       div.removeEventListener('click', clickEvent);
       div.classList.add('disabled');
     });
+
+    backDropOn();
+    resetCharacters()
+    totalScoresP2++
+    console.log(totalScoresP2);
   }
 };
 
@@ -84,17 +100,18 @@ const checkWinner = (token) => {
     crossOutLine(0, 'right-diagonal-line');
     revealWinner(token);
   } else if (
-    gridAllBoxes[0].childNodes.length === 1 &&
-    gridAllBoxes[1].childNodes.length === 1 &&
-    gridAllBoxes[2].childNodes.length === 1 &&
-    gridAllBoxes[3].childNodes.length === 1 &&
-    gridAllBoxes[4].childNodes.length === 1 &&
-    gridAllBoxes[5].childNodes.length === 1 &&
-    gridAllBoxes[6].childNodes.length === 1 &&
-    gridAllBoxes[7].childNodes.length === 1 &&
-    gridAllBoxes[8].childNodes.length === 1
+    gridAllBoxes[0].childNodes.length === 2 &&
+    gridAllBoxes[1].childNodes.length === 2 &&
+    gridAllBoxes[2].childNodes.length === 2 &&
+    gridAllBoxes[3].childNodes.length === 2 &&
+    gridAllBoxes[4].childNodes.length === 2 &&
+    gridAllBoxes[5].childNodes.length === 2 &&
+    gridAllBoxes[6].childNodes.length === 2 &&
+    gridAllBoxes[7].childNodes.length === 2 &&
+    gridAllBoxes[8].childNodes.length === 2
   ) {
     winnerTxt.textContent = 'Draw!';
-    document.body.appendChild(winnerTxt);
+    winnerModal.classList.add('visible');
   }
 };
+

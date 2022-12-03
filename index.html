@@ -20,6 +20,7 @@
 
     <script src="index.js" defer></script>
     <script src="winning_logic.js" defer></script>
+    <script src="characters_change.js" defer></script>
     <script src="hamburger_menu.js" defer></script>
     <script src="modals.js" defer></script>
 
@@ -40,7 +41,7 @@
         <img class="cloud" src="./images/o-cloud.png" alt="" />
       </section>
 
-      <!-HAMBURGER MENU SECTION->
+      <!--HAMBURGER MENU SECTION-->
       <nav class="ham-menu">
         <h4>MENU</h4>
         <ul class="display-none">
@@ -63,7 +64,7 @@
       </div>
     </section>
 
-    <!-HOW TO PLAY MODAL->
+    <!--HOW TO PLAY MODAL-->
     <section class="modal" id="how-to-play-modal">
       <div class="modal-content">
         <h2><b>How to play</b></h2> 
@@ -78,7 +79,7 @@
       </div>
     </section>
 
-    <!-SCOREBOARD MODAL->
+    <!--SCOREBOARD MODAL-->
     <section class="modal" id="scoreboard-modal" style="display: none">
       <div class="modal-content"></div>
       <div class="modal-actions">
@@ -86,7 +87,7 @@
       </div>
     </section>
 
-    <!-CHANGE CHARACTER MODAL->
+    <!--CHANGE CHARACTER MODAL-->
     <section class="modal" id="change-char-modal" style="display: none">
       <div class="modal-content"></div>
       <div class="modal-actions">
@@ -95,20 +96,20 @@
       </div>
     </section>
 
-    <!-DISPLAY WINNER MODAL->
-    <section class="modal" id="winner-modal" style="display: none">
+    <!--DISPLAY WINNER MODAL-->
+    <section class="modal" id="winner-modal">
       <div class="modal-content">
         <section class="winner">
-          <h2 class="winner-txt invisible">Player 1 wins!</h2>
+          <h2 class="winner-txt">Player 1 wins!</h2>
         </section>
       </div>
       <div class="modal-actions">
-        <button class="btn btn-success">Play again</button>
+        <button class="btn btn-passive btn-play-again">Play again</button>
       </div>
     </section>
 
     <!--------MAIN SECTION-------->
-    <!-LEFT CHARACTER->
+    <!--LEFT CHARACTER-->
     <main>
       <section class="character-image-left">
         <section class="mario-second-move invisible">
@@ -132,28 +133,28 @@
         />
       </section>
 
-      <!-GRID BOARD->
+      <!--GRID BOARD-->
       <section class="game-grid">
         <section class="grid-col-1">
-          <div class="box1"></div>
-          <div class="box2"></div>
-          <div class="box3"></div>
+          <div class="box1"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
+          <div class="box2"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
+          <div class="box3"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
         </section>
 
         <section class="grid-col-2">
-          <div class="box4"></div>
-          <div class="box5"></div>
-          <div class="box6"></div>
+          <div class="box4"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
+          <div class="box5"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
+          <div class="box6"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
         </section>
 
         <section class="grid-col-3">
-          <div class="box7"></div>
-          <div class="box8"></div>
-          <div class="box9"></div>
+          <div class="box7"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
+          <div class="box8"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
+          <div class="box9"><img class="question-block" src="/images/question_block_2.png" alt=""></div>
         </section>
       </section>
 
-      <!-RIGHT CHARACTER->
+      <!--RIGHT CHARACTER-->
       <section class="character-image-right">
         <section class="luigi-second-move invisible">
           <p class="my-turn my-turn-right">It's my turn</p>
