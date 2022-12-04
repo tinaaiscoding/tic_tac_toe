@@ -348,17 +348,41 @@ h3 {
 
 /*** HOW-TO-PLAY MODAL */
 #how-to-play-modal {
-  width: 400px;
+  max-width: 25%;
 }
 
 /*** CHARACTER MODAL */
 
 /*** SCOREBOARD MODAL */
+#scoreboard-modal {
+  max-width: 25%;
+  top: 260px;
+}
+
+.scoreboard-table {
+  border-spacing: 0;
+  margin: 35px auto;
+}
+
+.scoreboard-table th {
+  border-bottom: solid 2px black;
+  border-collapse: collapse;
+}
+
+.right-border {
+  border-right: solid 2px black;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 15px 20px;
+}
 
 /*** DISPLAY-WINNER MODAL */
 #winner-modal {
   background-color: rgba(189, 240, 255, 93%);
-top: 300px;
+  top: 320px;
   transition-property: all;
   transition-delay: 2000s;
   max-width: 30%;

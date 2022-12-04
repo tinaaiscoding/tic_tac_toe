@@ -56,9 +56,10 @@
 
     <!--------MODAL SECTION-------->
     <div id="backdrop"></div>
-    <!-START MODAL->
+    <!--START MODAL-->
     <section class="modal" id="start-char-modal" style="display: none">
       <div class="modal-content"></div>
+
       <div class="modal-actions">
         <button class="btn btn-success">Start</button>
       </div>
@@ -74,14 +75,28 @@
         their token in a square. </p>
         <p> The first player to get three tokens in a row (vertically, horizontally or diagonally) wins!</p>
       </div>
+
       <div class="modal-actions">
         <button class="btn btn-passive">Back</button>
       </div>
     </section>
 
     <!--SCOREBOARD MODAL-->
-    <section class="modal" id="scoreboard-modal" style="display: none">
-      <div class="modal-content"></div>
+    <section class="modal" id="scoreboard-modal">
+      <div class="modal-content">
+        <h2><b>Scoreboard</b></h2>
+        <table class="scoreboard-table">
+          <tr>
+            <th class="right-border">Player 1</th>
+            <th>Player 2</th>
+          </tr>
+          <tr>
+            <td class="p1-score right-border">0</td>
+            <td class="p2-score">0</td>
+          </tr>
+        </table>
+      </div>
+
       <div class="modal-actions">
         <button class="btn btn-passive">Back</button>
       </div>
@@ -103,6 +118,7 @@
           <h2 class="winner-txt">Player 1 wins!</h2>
         </section>
       </div>
+
       <div class="modal-actions">
         <button class="btn btn-passive btn-play-again">Play again</button>
       </div>

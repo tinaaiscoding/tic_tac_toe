@@ -1,5 +1,32 @@
+// ---------------- BACKDROP  ----------------
+const allModals = document.querySelectorAll('.modal');
+const backdrop = document.getElementById('backdrop');
+
+function backDropOn() {
+  backdrop.classList.add('visible');
+}
+
+function backDropOff() {
+  backdrop.classList.remove('visible');
+}
+
+function removeBackdropHandler() {
+  allModals.forEach((modal) => {
+    modal.classList.remove('visible');
+  });
+  backDropOff();
+}
+
+for (let i = 0; i < passiveBtn.length; i++) {
+  passiveBtn[i].addEventListener('click', () => {
+    removeBackdropHandler();
+  });
+}
+
+backdrop.addEventListener('click', removeBackdropHandler);
+
+// ---------------- WINNER MODAL ----------------
 const playAgainBtn = document.querySelector('.btn-play-again');
-// const gameGrid = document.querySelector('.game-grid');
 
 playAgainBtn.addEventListener('click', () => {
   const pTags = document.querySelectorAll('.game-grid  p');
@@ -22,9 +49,6 @@ playAgainBtn.addEventListener('click', () => {
   gridAllBoxes.forEach((box) => {
     box.classList.remove('disabled');
   });
-
-  // if (box.firstChild.tagName.toLowerCase() === 'h3') {
-
-  // // console.log(box.firstChild.className )å;
-  // }
 });
+
+// ---------------- SCOREBOARD MODAL ----------------

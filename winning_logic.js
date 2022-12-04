@@ -110,7 +110,7 @@ const checkWinner = (token) => {
     gridAllBoxes[7].childNodes.length === 2 &&
     gridAllBoxes[8].childNodes.length === 2
   ) {
-    winnerTxt.textContent = 'Draw!';
+    winnerTxt.textContent = "It's a draw!";
     winnerModal.classList.add('visible');
   }
 };

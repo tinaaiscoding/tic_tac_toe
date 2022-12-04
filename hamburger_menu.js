@@ -1,32 +1,7 @@
 const menu = document.querySelector('nav h4');
 const menuList = document.querySelector('.ham-menu ul');
 const menuItems = document.querySelectorAll('.ham-menu li');
-const allModals = document.querySelectorAll('.modal');
-const backdrop = document.getElementById('backdrop');
 const passiveBtn = document.querySelectorAll('.btn-passive');
-
-function backDropOn() {
-  backdrop.classList.add('visible');
-}
-
-function backDropOff() {
-  backdrop.classList.remove('visible');
-}
-
-function removeBackdropHandler() {
-  allModals.forEach((modal) => {
-    modal.classList.remove('visible');
-  });
-  backDropOff();
-}
-
-for (let i = 0; i < passiveBtn.length; i++) {
-  passiveBtn[i].addEventListener('click', () => {
-    removeBackdropHandler();
-  });
-}
-
-backdrop.addEventListener('click', removeBackdropHandler);
 
 menu.addEventListener('click', function () {
   menuList.classList.remove('display-none');
@@ -36,10 +11,12 @@ menuList.addEventListener('mouseleave', function () {
   menuList.classList.add('display-none');
 });
 
+// ---------------- NEW GAME MENU ITEM ----------------
 menuItems[0].addEventListener('click', () => {
   window.location.reload();
 });
 
+// ---------------- HOW TO PLAY MENU ITEM ----------------
 menuItems[1].addEventListener('click', () => {
   const howToPlayModal = document.querySelector('#how-to-play-modal');
 
@@ -47,8 +24,21 @@ menuItems[1].addEventListener('click', () => {
   backDropOn();
 });
 
-menuItems[2].addEventListener('click', () => {});
+// ---------------- SCOREBOARD MENU ITEM ----------------
+menuItems[2].addEventListener('click', () => {
+  const scoreboardModal = document.querySelector('#scoreboard-modal');
+  const player1Score = document.querySelector('.p1-score');
+  const player2Score = document.querySelector('.p2-score');
 
+  scoreboardModal.classList.add('visible');
+  backDropOn();
+
+  player1Score.textContent = (totalScoresP1)
+  player2Score.textContent = (totalScoresP2)
+});
+
+// ---------------- CHANGE PLAYER MENU ITEM ----------------
 menuItems[3].addEventListener('click', () => {});
 
+// ---------------- CREDITS MENU ITEM ----------------
 menuItems[4].addEventListener('click', () => {});
