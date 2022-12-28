@@ -18,8 +18,6 @@ const revealWinner = (token) => {
     backDropOn();
     resetCharacters()
     totalScoresP1++
-    console.log(totalScoresP1);
-
   } else if (token === 'O') {
     winnerTxt.textContent = 'Player 2 wins!';
     winnerModal.classList.add('visible');
@@ -32,7 +30,6 @@ const revealWinner = (token) => {
     backDropOn();
     resetCharacters()
     totalScoresP2++
-    console.log(totalScoresP2);
   }
 };
 

@@ -1,0 +1,107 @@
+@media only screen and (max-width: 1440px) and (max-height: 900px) {
+  body {
+    height: 92vh;
+    background-size: contain;
+  }
+
+  /* MAIN SECTION */
+  main {
+    margin: 0 auto;
+  }
+
+  /** CHARACTER SECTIONS **/
+  .character-image-right,
+  .character-image-left {
+    position: relative;
+    top: 263px;
+  }
+
+  .mario-2 {
+    right: 48px;
+  }
+
+  .my-turn-left {
+    right: -36px;
+    top: -26px;
+  }
+
+  .my-turn-right {
+    left: 91px;
+    top: -26px;
+  }
+
+  .speech-bubble-left,
+  .speech-bubble-right {
+    height: 100px;
+    position: relative;
+  }
+
+  .speech-bubble-left {
+    left: 179px;
+    bottom: 36px;
+  }
+
+  .speech-bubble-right {
+    right: 52px;
+    bottom: 36px;
+  }
+
+  #winner-modal {
+    top: 240px;
+  }
+
+  #scoreboard-modal {
+    top: 190px;
+  }
+}
+
+@media only screen and (max-width: 820px) and (max-height: 1180px) {
+  body {
+    height: 100vh;
+    background-size: cover;
+  }
+
+  header {
+    display: inline-block;
+  }
+
+  main {
+    display: inline-block;
+  }
+
+  .character-image-right,
+  .character-image-left {
+    display: none;
+  }
+
+  .game-grid div {
+    height: 180px;
+    width: 180px;
+  }
+
+  .game-grid div p {
+    font-size: 5.1rem;
+    margin: 0 auto;
+    padding: 18px 10px 0 13px;
+
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+  }
+
+  .player-token-text {
+    font-size: 1.5rem;
+  }
+
+  #how-to-play-modal {
+    max-width: 70%;
+    top: 300px;
+  }
+
+  #scoreboard-modal {
+    max-width: 50%;
+  }
+
+  #winner-modal {
+    max-width: 70%;
+  }
+}

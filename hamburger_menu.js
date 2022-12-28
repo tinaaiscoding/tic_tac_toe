@@ -4,7 +4,7 @@ const menuItems = document.querySelectorAll('.ham-menu li');
 const passiveBtn = document.querySelectorAll('.btn-passive');
 
 menu.addEventListener('click', function () {
-  menuList.classList.remove('display-none');
+  menuList.classList.toggle('display-none');
 });
 
 menuList.addEventListener('mouseleave', function () {
