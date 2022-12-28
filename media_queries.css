@@ -104,4 +104,30 @@
   #winner-modal {
     max-width: 70%;
   }
+
+
+  .hr-line {
+    bottom: 77px;
+    left: 16px;
+    width: 519px;
+  }
+  
+  .left-diagonal-line {
+    left: -74px;
+    top: 268px;
+    width: 696px;
+  }
+  
+  .right-diagonal-line {
+    left: -74px;
+    top: 269px;
+    width: 696px;
+  }
+  
+  .vertical-line {
+    left: -176px;
+    rotate: 90deg;
+    top: 269px;
+    width: 519px;
+  }
 }
