@@ -105,29 +105,103 @@
     max-width: 70%;
   }
 
-
   .hr-line {
     bottom: 77px;
     left: 16px;
     width: 519px;
   }
-  
+
   .left-diagonal-line {
     left: -74px;
     top: 268px;
     width: 696px;
   }
-  
+
   .right-diagonal-line {
     left: -74px;
     top: 269px;
     width: 696px;
   }
-  
+
   .vertical-line {
     left: -176px;
-    rotate: 90deg;
     top: 269px;
     width: 519px;
   }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+  img header {
+    display: inline-block;
+  }
+
+  main {
+    display: inline-block;
+  }
+
+  .game-title {
+    height: 70px;
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .game-grid div {
+    height: 100px;
+    width: 100px;
+  }
+
+  .game-grid div p {
+    font-size: 3rem;
+    padding: 5px 12px 0 19px;
+  }
+
+  .player-token-text {
+    font-size: 1rem;
+    margin: 5px 0 20px;
+  }
+
+  #how-to-play-modal {
+    max-width: 90%;
+    top: 80px;
+  }
+
+  #scoreboard-modal {
+    max-width: 90%;
+  }
+
+  #winner-modal {
+    max-width: 90%;
+    top: 180px;
+  }
+
+  .hr-line {
+    bottom: 45px;
+    left: 8px;
+    width: 292px;
+  }
+
+  .left-diagonal-line {
+    left: -43px;
+    top: 148px;
+    width: 395px;
+  }
+
+  .right-diagonal-line {
+    left: -44px;
+    top: 149px;
+    width: 395px;
+  }
+
+  .vertical-line {
+    left: -98px;
+    top: 151px;
+    width: 292px;
+  }
+
+  .ham-menu {
+    z-index: 100;
+  }
+
+  .ham-menu ul {
+    background-color: rgb(254, 210, 10);
 }
