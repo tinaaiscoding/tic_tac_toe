@@ -5,8 +5,13 @@ let totalScoresP1 = 0
 let totalScoresP2 = 0
 
 const revealWinner = (token) => {
+  const p1Name = document.querySelector('.player1-name').value;
+  const p2Name = document.querySelector('.player2-name').value;
+  
   if (token === 'X') {
-    winnerTxt.textContent = 'Player 1 wins!';
+
+
+    winnerTxt.textContent = `${p1Name} wins!`;
     winnerModal.classList.add('visible');
     
 
@@ -17,9 +22,11 @@ const revealWinner = (token) => {
 
     backDropOn();
     resetCharacters()
+
     totalScoresP1++
   } else if (token === 'O') {
-    winnerTxt.textContent = 'Player 2 wins!';
+  
+    winnerTxt.textContent = `${p2Name} wins!`;
     winnerModal.classList.add('visible');
 
     gridAllBoxes.forEach((div) => {

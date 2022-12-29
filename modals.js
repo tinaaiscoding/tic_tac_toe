@@ -51,4 +51,3 @@ playAgainBtn.addEventListener('click', () => {
   });
 });
 
-// ---------------- SCOREBOARD MODAL ----------------

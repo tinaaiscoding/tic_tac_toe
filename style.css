@@ -394,10 +394,11 @@ th {
 /*** DISPLAY-WINNER MODAL */
 #winner-modal {
   background-color: rgba(189, 240, 255, 93%);
+  max-width: fit-content;
+  padding: 20px;
   top: 320px;
   transition-property: all;
   transition-delay: 2000s;
-  max-width: 30%;
 }
 
 .modal .winner-txt {

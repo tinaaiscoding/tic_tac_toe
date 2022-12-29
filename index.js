@@ -38,7 +38,8 @@ startGameBtn.addEventListener('click', () => {
   const p2Name = document.querySelector('.player2-name').value;
   const p1Token = document.querySelector('.player1-token-text h2');
   const p2Token = document.querySelector('.player2-token-text h2');
-  const scoreboardP1 = document.querySelector('.scoreboard-table p1');
+  const scoreboardP1 = document.querySelector('.scoreboard-table .p1');
+  const scoreboardP2 = document.querySelector('.scoreboard-table .p2');
 
   if (p1Name.length > 0 || p2Name.length > 0) {
     p1Token.textContent = `${p1Name} is`;
@@ -49,8 +50,8 @@ startGameBtn.addEventListener('click', () => {
     playerTokenText.textContent = `${p1Name} - X | ${p2Name} - O`;
   }
 
-  console.log();
-  console.log();
+  scoreboardP1.textContent = p1Name;
+  scoreboardP2.textContent = p2Name;
 
   playersNameModal.classList.remove('visible');
 });
