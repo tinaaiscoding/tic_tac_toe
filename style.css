@@ -346,6 +346,18 @@ h3 {
   display: block;
 }
 
+/*** PLAYER'S NAME MODAL */
+#players-name-modal {
+  top: 260px;
+  width: 504px;
+}
+#players-name-modal label {
+  font-size: 1.5rem;
+}
+
+#players-name-modal input {
+  margin-top: 10px;
+}
 /*** HOW-TO-PLAY MODAL */
 #how-to-play-modal {
   max-width: 25%;

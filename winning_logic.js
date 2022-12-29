@@ -109,6 +109,7 @@ const checkWinner = (token) => {
   ) {
     winnerTxt.textContent = "It's a draw!";
     winnerModal.classList.add('visible');
+    resetCharacters()
   }
 };
 
