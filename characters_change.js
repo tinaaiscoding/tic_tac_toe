@@ -32,4 +32,5 @@ function resetCharacters() {
   mario_2.classList.add('invisible');
   luigi_1.classList.remove('invisible');
   luigi_2.classList.add('invisible');
+  document.body.removeChild(playerTurnText)
 }
