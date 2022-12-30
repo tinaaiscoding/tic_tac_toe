@@ -22,21 +22,13 @@ Enjoy my take on the classic tic-tac-toe game.
 - [Design ideas](./planning/design_ideas.pdf)
 - [Problems I ran into](./planning/problems_I_ran_into.pdf)
 
-## :warning: Bugs to fix :bug:
-- Hover effect after the game has ended. 
-([View bug](./images/Bug1.png))
-- Refactor code!!!
-
 ## 😮‍💨 Lessons learnt 
 - Planning is **SUPER** helpful
 - Don't give up, asking for help is ok
 - Slow and steady wins the race
 
  ## :white_check_mark: Future features
- - Pop-up modal of winner
- - Reset button
- - Score tracker
- - Different devices view
+- Change to different characters
 
  ## 🙆🏻‍♀️ Comments from Tina
  Super happy with the way everything turned out. I had **so** much fun building this project. I would literally laugh and celebrate when something worked the way I wanted it to. I think it was the Super Mario theme that made it more fun and enjoyable 🤣 \
