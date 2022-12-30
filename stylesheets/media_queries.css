@@ -45,16 +45,16 @@
     bottom: 36px;
   }
 
-  #winner-modal {
-    top: 240px;
+  #players-name-modal {
+    top: 190px;
   }
 
   #scoreboard-modal {
     top: 190px;
   }
 
-  #players-name-modal {
-    top: 190px;
+  #winner-modal {
+    top: 240px;
   }
 }
 
@@ -85,15 +85,42 @@
 
   .game-grid div p {
     font-size: 5.1rem;
-    margin: 0 auto;
-    padding: 18px 10px 0 13px;
+  }
+  
+  .ham-menu {
+    z-index: 100;
+  }
+  
+  .ham-menu ul {
+    background-color: rgb(254, 210, 10);
+  }
 
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+  .hr-line {
+    bottom: 77px;
+    left: 16px;
+    width: 519px;
+  }
+  
+  .left-diagonal-line {
+    left: -74px;
+    top: 268px;
+    width: 696px;
   }
 
   .player-token-text {
     font-size: 1.5rem;
+  }
+  
+  .right-diagonal-line {
+    left: -74px;
+    top: 269px;
+    width: 696px;
+  }
+  
+  .vertical-line {
+    left: -176px;
+    top: 269px;
+    width: 519px;
   }
 
   #how-to-play-modal {
@@ -113,30 +140,6 @@
     height: 600px;
     top: 230px;
     width: 80%;
-  }
-
-  .hr-line {
-    bottom: 77px;
-    left: 16px;
-    width: 519px;
-  }
-
-  .left-diagonal-line {
-    left: -74px;
-    top: 268px;
-    width: 696px;
-  }
-
-  .right-diagonal-line {
-    left: -74px;
-    top: 269px;
-    width: 696px;
-  }
-
-  .vertical-line {
-    left: -176px;
-    top: 269px;
-    width: 519px;
   }
 }
 
@@ -165,15 +168,45 @@
     font-size: 3rem;
     padding: 5px 12px 0 19px;
   }
+  
+  .hr-line {
+    bottom: 45px;
+    left: 8px;
+    width: 292px;
+  }
+  
+  .left-diagonal-line {
+    left: -43px;
+    top: 148px;
+    width: 395px;
+  }
 
   .player-token-text {
     font-size: 1rem;
     margin: 5px 0 20px;
   }
+  
+  .right-diagonal-line {
+    left: -44px;
+    top: 149px;
+    width: 395px;
+  }
+  
+  .vertical-line {
+    left: -98px;
+    top: 151px;
+    width: 292px;
+  }
 
   #how-to-play-modal {
     max-width: 90%;
     top: 80px;
+  }
+  
+  #players-name-modal {
+    height: 400px;
+    top: 150px;
+    width: 90%;
   }
 
   #scoreboard-modal {
@@ -183,43 +216,5 @@
   #winner-modal {
     max-width: 90%;
     top: 180px;
-  }
-
-  #players-name-modal {
-    height: 400px;
-    top: 150px;
-    width: 90%;
-  }
-
-  .hr-line {
-    bottom: 45px;
-    left: 8px;
-    width: 292px;
-  }
-
-  .left-diagonal-line {
-    left: -43px;
-    top: 148px;
-    width: 395px;
-  }
-
-  .right-diagonal-line {
-    left: -44px;
-    top: 149px;
-    width: 395px;
-  }
-
-  .vertical-line {
-    left: -98px;
-    top: 151px;
-    width: 292px;
-  }
-
-  .ham-menu {
-    z-index: 100;
-  }
-
-  .ham-menu ul {
-    background-color: rgb(254, 210, 10);
   }
 }
