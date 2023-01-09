@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url('/images/bg-img.jpg') repeat-x center;
+  background: url('tic_tac_toe/images/bg-img.jpg') repeat-x center;
   background-size: auto;
   color: white;
   font-family: 'SF Pixelate', sans-serif;
@@ -137,7 +137,7 @@ p {
 }
 
 .game-grid div {
-  background-image: url('/images/empty_block_2.png');
+  background-image: url('tic_tac_toe/images/empty_block_2.png');
   background-size: contain;
   height: 100px;
   margin: 3px 2px 4px 2px;
