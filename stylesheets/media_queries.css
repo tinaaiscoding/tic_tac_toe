@@ -62,12 +62,16 @@
     bottom: 36px;
   }
 
+  #how-to-play-modal {
+    top: 151px;
+  }
+
   #players-name-modal {
     top: 190px;
   }
 
   #scoreboard-modal {
-    top: 190px;
+    top: 199px;
   }
 
   #winner-modal {
