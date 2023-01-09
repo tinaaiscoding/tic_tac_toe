@@ -1,7 +1,7 @@
 /* LAPTOP SIZE */
 @media only screen and (max-width: 1440px) and (max-height: 900px) {
   body {
-    height: 92vh;
+    height: 93vh;
     background-size: contain;
   }
 
@@ -15,8 +15,25 @@
     top: 263px;
   }
 
+  .luigi {
+    top: 15px;
+  }
+
+  .luigi-second-move, .mario-second-move {
+    bottom: 41px;
+    position: relative;
+  }
+
+  .mario {
+    top: 24px;
+  }
+
   .mario-2 {
     right: 48px;
+  }
+
+  .mario-second-move {
+    left: -50px;
   }
 
   .my-turn-left {
