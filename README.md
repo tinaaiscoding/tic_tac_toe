@@ -2,7 +2,7 @@
 This is my first project! \
 Enjoy my take on the classic tic-tac-toe game.
 
-## :star: View my project [here](https://tinanvo.github.io/tic_tac_toe/)! :eyes:
+## :star: View my project [here](https://tinaaiscoding.github.io/tic_tac_toe/)! :eyes:
 
 ## :page_with_curl: About
 
